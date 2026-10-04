@@ -212,7 +212,7 @@ def relevancy_check_node(state: RAGState) -> dict:
     )
     decision: RelevancyDecision = relevancy_llm.invoke([
         {"role": "system", "content": RELEVANCY_CHECK_SYSTEM},
-        {"role": "user", "content": prompt},
+        {"role": "user", "content": prompt}, 
     ])
     return {"is_relevant": decision.is_relevant}
 

@@ -238,3 +238,5 @@ embedding_cache/
 
 # deep eval
 .deepeval/
+
+adv_rag
